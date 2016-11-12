@@ -8,6 +8,7 @@ type Client struct {
 	hc  *http.Client
 }
 
+// NewClient instantiates a new client for the Dota 2 Web API
 func NewClient(key string, options ...func(*Client)) *Client {
 	c := &Client{
 		key: key,
